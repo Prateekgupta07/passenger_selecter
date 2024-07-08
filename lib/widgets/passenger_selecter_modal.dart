@@ -74,6 +74,7 @@ class _PassengerSelectorModalState extends State<PassengerSelectorModal> {
           height: 168,
           width: 265,
           child: PageView.builder(
+            physics: NeverScrollableScrollPhysics(),
             controller: imagePageController,
             itemCount: vehicleImage.length,
             scrollDirection: Axis.vertical,
@@ -112,6 +113,7 @@ class _PassengerSelectorModalState extends State<PassengerSelectorModal> {
           height: 30,
           width: 90,
           child: PageView.builder(
+            physics: NeverScrollableScrollPhysics(),
             controller: namePageController,
             itemCount: vehicleName.length,
             scrollDirection: Axis.vertical,
@@ -128,6 +130,7 @@ class _PassengerSelectorModalState extends State<PassengerSelectorModal> {
           height: 20,
           width: 90,
           child: PageView.builder(
+            physics: NeverScrollableScrollPhysics(),
             controller: pricePageController,
             itemCount: vehiclePrice.length,
             scrollDirection: Axis.vertical,
